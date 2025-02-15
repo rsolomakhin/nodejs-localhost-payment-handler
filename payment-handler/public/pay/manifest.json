@@ -1,0 +1,13 @@
+{
+  "default_applications": ["/pay/manifest.json"],
+  "name": "Sample Payment Handler",
+  "short_name": "Sample",
+  "icons": [{
+    "src": "green_square.png"
+  }],
+  "serviceworker": {
+    "src": "sw.js",
+    "scope": "/pay/",
+    "use_cache": false
+  }
+}

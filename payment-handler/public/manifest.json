@@ -1,8 +1,0 @@
-{
-  "default_applications": ["manifest.json"],
-  "serviceworker": {
-    "src": "sw.js",
-    "scope": "/",
-    "use_cache": false
-  }
-}

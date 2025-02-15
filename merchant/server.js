@@ -1,14 +1,9 @@
-const http = require("http");
-
-const hostname = "127.0.0.1";
+const express = require('express');
+const app = express();
 const port = 8000;
 
-const server = http.createServer(function (req, res) {
-  res.writeHead(200, { "Content-Type": "text/plain" });
+app.use(express.static('public'));
 
-  res.end("Hello World\n");
-});
-
-server.listen(port, hostname, function () {
-  console.log(`Merchant server running at http://${hostname}:${port}/`);
+app.listen(port, function () {
+  console.log(`Merchant listening on port ${port}.`);
 });
