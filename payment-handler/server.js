@@ -10,5 +10,5 @@ const server = http.createServer(function (req, res) {
 });
 
 server.listen(port, hostname, function () {
-  console.log('Payment handler server running at http://${hostname}:${port}/`);
+  console.log(`Payment handler server running at http://${hostname}:${port}/`);
 });
