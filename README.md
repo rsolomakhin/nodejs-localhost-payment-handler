@@ -3,12 +3,12 @@ A demo payment handler and demo merchant on localhost node.js server.
 
 Start the payment handler server:
 ```
-$ node payment-handler-server.js
+$ cd payment-handler && node server.js
 ```
 
 Start the merchant server:
 ```
-$ node merchant-server.js
+$ cd merchant && node server.js
 ```
 
 Point your browser at `http://localhost:8000`.
